@@ -1,0 +1,123 @@
+.answered-questions-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .export-button,
+    .search-button,
+    .clear-filters-button {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: #161f29;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #3973b1;
+      }
+    }
+  
+    .loading-bar {
+      position: relative;
+      width: 100%;
+      height: 10px;
+      background-color: #f3f3f3;
+      margin: 20px 0;
+  
+      .progress {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #15212e;
+        animation: loading 2s infinite;
+      }
+    }
+  
+    @keyframes loading {
+      0% {
+        width: 0;
+      }
+      50% {
+        width: 100%;
+      }
+      100% {
+        width: 0;
+      }
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+  
+      th {
+        background-color: #f4f4f4;
+      }
+  
+      tr:hover {
+        background-color: #f1f1f1;
+        cursor: pointer;
+      }
+    }
+  
+    .filters {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  
+      input[type="text"],
+      input[type="date"] {
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+  
+      .clear-filters-button {
+        background-color: #dc3545;
+  
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+  
+      button {
+        padding: 10px 20px;
+        background-color: #273341;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+  
+        &:disabled {
+          background-color: #ddd;
+          cursor: not-allowed;
+        }
+  
+        &:hover:not(:disabled) {
+          background-color: #151d25;
+        }
+      }
+    }
+  }
+  

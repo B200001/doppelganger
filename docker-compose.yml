@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  backend:
+    image: backendimage  # Use the name of your backend image
+    # env_file:
+    #   - ./backend/.env
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    depends_on:
+      - redis
+
+  frontend:
+    image: frontendimage  # Use the name of your frontend image
+    # env_file:
+    #   - ./frontend/.env
+    ports:
+      - '5173:5173'
+    depends_on:
+      - backend
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}

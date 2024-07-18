@@ -1,0 +1,92 @@
+
+
+.participate {
+    padding: 2rem;
+  
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      animation: fadeInDown 1.5s forwards;
+    }
+  
+    h3 {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+    }
+  
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      .section {
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1.5s forwards;
+  
+        ul {
+          list-style-type: none;
+          padding: 0;
+  
+          li {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+          }
+  
+          p {
+            margin: 0.5rem 0 1rem 0;
+          }
+  
+          a {
+            color: #007bff;
+            text-decoration: none;
+  
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+  
+        button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+  
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  

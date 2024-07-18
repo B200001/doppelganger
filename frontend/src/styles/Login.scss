@@ -1,0 +1,149 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  
+    .login-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      opacity: 0; /* Start hidden */
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+      }
+  
+      .error {
+        color: red;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+  
+      form {
+        .form-group {
+          margin-bottom: 1rem;
+  
+          label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+          }
+  
+          input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+        }
+  
+        .btn {
+          width: 100%;
+          padding: 0.75rem;
+          border: none;
+          border-radius: 4px;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+  
+          &.btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s;
+  
+            &:hover {
+              background-color: #0056b3;
+            }
+          }
+  
+          &.btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+            transition: background-color 0.3s;
+  
+            &:hover {
+              background-color: #5a6268;
+            }
+          }
+        }
+      }
+    }
+  
+    .fade-in {
+      animation: fadeIn 1.5s forwards;
+    }
+  
+    .fade-in-down {
+      animation: fadeInDown 1.5s forwards;
+    }
+  
+    .fade-in-left {
+      animation: fadeInLeft 1.5s forwards;
+    }
+  
+    .fade-in-right {
+      animation: fadeInRight 1.5s forwards;
+    }
+  
+    .fade-in-up {
+      animation: fadeInUp 1.5s forwards;
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

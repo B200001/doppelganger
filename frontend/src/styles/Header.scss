@@ -1,0 +1,72 @@
+$primary-color: #0b1a2b;
+$secondary-color: #f8f9fa;
+$text-color: #ffffff;
+$highlight-color: #ff6f61;
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 1rem 0;
+
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+
+  .navbar-nav .nav-link {
+    color: $text-color !important;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: $highlight-color !important;
+      transform: scale(1.1);
+    }
+  }
+
+  .btn-outline-light {
+    color: $text-color;
+    border: 1px solid $text-color;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $text-color;
+      color: $primary-color;
+    }
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+  }
+
+  @media (max-width: 768px) {
+    .navbar-nav .nav-link {
+      margin: 0.5rem 0;
+    }
+
+    .btn-outline-light {
+      margin-top: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .logo {
+      height: 40px;
+    }
+
+    .btn-outline-light {
+      font-size: 0.875rem;
+    }
+  }
+}

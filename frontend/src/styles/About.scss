@@ -1,0 +1,99 @@
+
+.about {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  
+    .PKC_div {
+      margin-bottom: 3rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+          position: relative;
+          padding-left: 1.5rem;
+  
+          &:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ff6f61;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  
+    .our_team {
+      background-color: #f9f9f9;
+      padding: 2rem 0;
+  
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      .our_team_members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  
+    .our_partners {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      .our_partners_info {
+        font-size: 1.1rem;
+  
+        p {
+          margin-bottom: 1rem;
+        }
+  
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            font-weight: bold;
+            margin-top: 1.5rem;
+          }
+  
+          p {
+            margin-left: 1rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  
+    .animate__animated {
+      visibility: hidden;
+    }
+  
+    .animate__animated.animate__fadeIn,
+    .animate__animated.animate__fadeInUp,
+    .animate__animated.animate__fadeInDown {
+      visibility: visible;
+    }
+  
+    // Image styling for PKC
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

@@ -1,0 +1,36 @@
+@import 'mixins';
+@import 'variables';
+ // Importing animate.css for animations
+
+
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+  color: $font-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+button {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  @include box-shadow($primary-color);
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+
